@@ -20,6 +20,7 @@ function send(){
         msg: chatInput.value
     }
     socket.emit("chatting", param);
+    chatInput.value = ""
 }
 
 
